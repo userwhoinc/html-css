@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<style>
+    a {
+        text-decoration: none;
+        color: darkmagenta;
+    }
+    a:visited {
+        color: darkorchid;
+    }
+    a:active {
+        color: rgb(255, 0, 0);
+    }
+    a:hover {
+        color: slateblue;
+        text-decoration: underline;
+    }
+    a::before {
+        color: navy;
+    }
+    a::after {
+        content: ' ✖ ' ;
+        font-weight: normal;
+        text-decoration: none;
+        color: navy;
+    }
+    .especial {
+        background-color: yellow ;
+    }
+    .especial::before {
+        content: ' ✖ ' ;
+    }
+</style>
+<body>
+    <h1>Links personalizados</h1>
+    <ul>
+        <li><a href="https://www.netflix.com/browse" target="_blank">Netflix</a></li>
+        <li><a href="https://play.hbomax.com/profile/select" target="_blank">HBO</a></li>
+        <li><a class="especial" href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+    </ul>
+</body>
+</html>

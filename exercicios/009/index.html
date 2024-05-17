@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Aprenda a fazer imagens adaptavéis aos eletrônicos</p>
+    <picture>
+        <source media="(max-width:700px)" srcset="imagens/imgp.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="imagens/imgm.png" type="image/png">
+        <img src="Imagens/imgg.png" alt="Imagem flexivel">
+    </picture> <!--PRATIQUE SARA-->
+    <h1>Reproduzindo audios</h1>
+    <p>Podcast guanabara de teste</p>
+    <audio src="midia/guanacast-33.mp3" controls autoplay loop> </audio>
+    <p>E aqui temos uma musica relaxante</p>
+    <audio preload="metadata" autoplay loop controls>
+    <source src="midia/teatime-ofshane.mp3" type="audio/mpeg" />
+    <source src="midia/teatime-ofshane.ogg" type="audio/ogg">
+    <source src="midia/teatime-ofshane.wav" type="audio/wav">
+    </audio>
+    <!--mp3 ogg wav-->
+    <p>
+        Não suporta audio? <a href="midia/teatime-ofshane.mp3" download="teatime-ofshane.mp3" type="audio/mpeg"> Clique aqui</a> 
+    </p>
+    <!--não esquecer de type em seus arquivos, e o tipo de arquivo-->
+    <h1>Videos</h1>
+    <p>Videos são inseridos com a tag video em seu aparelho</p>
+    <video width="500px" poster="midia/café.500.jpeg" controls autoplay>
+     <source src="midia/meuvideo.mp4.mp4" type="video/mp4">
+     <source src="midia/meuvideo.mkv.mkv" type="video/">
+     <source src="midia/meuvideo.webm.webm" type="video/webm">
+     <p>Seu navegador não corresponde a este tipo de mídia</p>
+    </video>
+    <h1>Colocando videos externos</h1>
+    <p>Escolha um video do youtube ou vimeo com direitos autorais, e incorpore ele </p>
+    <h2>Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=k78qezv7IydhBdmr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>Vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/257399106?h=b4f1975b25&autoplay=1&loop=1&title=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-color:#c199e7cb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#principal {
+ color: purple;
+ text-align: center;
+ background-color: antiquewhite;
+}
+
+h1 {
+    color: #503d61;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+    color: #6C5581;
+}
+.topico {
+    background-color: #e6dddd;
+}
+.semitopico {
+    color: steelblue;
+}
