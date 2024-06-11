@@ -1,0 +1,1 @@
+Obrigado por enviar suas informações, irei vender seus dados :]
