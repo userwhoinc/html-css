@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Formulário sem Input.</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="post">
+    <div>
+        <label for="iest">Estado</label>
+        <select name="Estado" id="iest">
+            
+            <option value="" selected>-----  Escolha  -----</option>
+            <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PR">Paraná</option>
+            </optgroup>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="prof">
+        <datalist id="prof">
+            <option> Administração</option>
+            <option>Contabilista</option>
+            <option>Desenvolvedor</option>
+            <option>Professor</option>
+        </datalist>
+    </div>
+
+    <p><label for="imsg"> Mensagem </label></p>
+    <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
