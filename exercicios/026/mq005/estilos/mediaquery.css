@@ -19,7 +19,7 @@ telas grandes: acima de 1200px
     }
     menu > ul > li {
         display: inline-block;
-        min-width: 150px;
+        min-width: 160px;
     }
 
     main {
